@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MysteryBox - Game Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.png" alt="MysteryBox Logo" class="site-logo">
+            <h1>MysteryBox</h1>
+        </div>
+        <p>Check your mystery game result.</p>
+    </header>
+
+    <main>
+        <section id="result">
+            <h2 id="resultTitle">🎉 Level Complete!</h2>
+
+            <div class="result-box">
+                <h3 id="resultGame">Detective Mystery</h3>
+                <p>Level: <strong id="resultLevel">1</strong></p>
+                <p>Answer: <strong id="resultAnswer">Correct</strong></p>
+                <p>⭐ Score: <strong id="resultScore">100</strong></p>
+                <p>⏱️ Time: <strong id="resultTime">30 seconds</strong></p>
+                <p>💡 Hints Used: <strong id="resultHints">0</strong></p>
+            </div>
+
+            <div id="unlockMessage">
+                <h3>🔓 Next Level Unlocked!</h3>
+                <p>Great job, Detective! Keep solving the mystery.</p>
+            </div>
+
+            <div class="result-buttons">
+                <a href="games.html"><button type="button">🎮 Back to Games</button></a>
+                <button type="button" id="nextLevelButton">🔥 Play Next Level</button>
+                <button type="button" id="playAgainButton">🔄 Play Again</button>
+                <a href="scoreboard.html"><button type="button">🏆 Scoreboard</button></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 MysteryBox</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

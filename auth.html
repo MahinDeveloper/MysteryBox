@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MysteryBox - Become a Detective</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.png" alt="MysteryBox Logo" class="site-logo">
+            <h1>MysteryBox</h1>
+        </div>
+        <p>Become a Detective and Unlock the Mystery</p>
+    </header>
+
+    <main>
+        <section id="auth">
+            <div class="auth-box">
+                <h2>🕵️ Become a Detective</h2>
+
+                <p class="auth-subtitle">
+                    Enter your detective name and personal mystery code to begin.
+                </p>
+
+                <form id="detectiveForm">
+                    <label for="detectiveName">Detective Name</label>
+                    <input 
+                        type="text" 
+                        id="detectiveName" 
+                        placeholder="Enter your name (e.g., Mahin)" 
+                        minlength="2"
+                        required
+                    >
+
+                    <label for="mysteryCode">Personal Mystery Code</label>
+                    <div class="password-box">
+                        <input 
+                            type="password" 
+                            id="mysteryCode" 
+                            placeholder="Enter your secret code (min 6 chars)" 
+                            minlength="6"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit">🔍 Start Investigation</button>
+                </form>
+
+                <p class="auth-note">
+                    First time? Enter any name and code.<br>
+                    Next time, use the same name and code to unlock.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 MysteryBox</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

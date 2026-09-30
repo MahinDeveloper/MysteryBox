@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MysteryBox - Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.png" alt="MysteryBox Logo" class="site-logo">
+            <h1>MysteryBox</h1>
+        </div>
+        <p>Choose a mystery and start solving!</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="scoreboard.html">Scoreboard</a>
+            <a href="about.html">About</a>
+            <a href="#" id="logoutButton">🚪 Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h2>🎮 Mystery Games</h2>
+            <p>Choose a mystery and start solving the puzzles!</p>
+        </section>
+
+        <section class="games-container">
+
+            
+            <div class="game-card">
+                <img src="images/detective.jpg" alt="Detective Mystery" class="game-image">
+                <div class="game-content">
+                    <h3>🕵️ Detective Mystery</h3>
+                    <p>Investigate clues, find suspects and solve the mystery.</p>
+
+                    <div class="levels">
+                        <button class="level-button" data-game="detective" data-level="1">Level 1</button>
+                        <button class="level-button locked" data-game="detective" data-level="2" disabled>🔒 Level 2</button>
+                        <button class="level-button locked" data-game="detective" data-level="3" disabled>🔒 Level 3</button>
+                        <button class="level-button locked" data-game="detective" data-level="4" disabled>🔒 Level 4</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="game-card">
+                <img src="images/codebreaker.jpg" alt="Code Breaker" class="game-image">
+                <div class="game-content">
+                    <h3>🔐 Code Breaker</h3>
+                    <p>Crack the code and solve challenging number puzzles.</p>
+
+                    <div class="levels">
+                        <button class="level-button" data-game="codebreaker" data-level="1">Level 1</button>
+                        <button class="level-button locked" data-game="codebreaker" data-level="2" disabled>🔒 Level 2</button>
+                        <button class="level-button locked" data-game="codebreaker" data-level="3" disabled>🔒 Level 3</button>
+                        <button class="level-button locked" data-game="codebreaker" data-level="4" disabled>🔒 Level 4</button>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="game-card">
+                <img src="images/riddle.jpg" alt="Riddle Challenge" class="game-image">
+                <div class="game-content">
+                    <h3>🧩 Riddle Challenge</h3>
+                    <p>Think carefully and solve tricky riddles.</p>
+
+                    <div class="levels">
+                        <button class="level-button" data-game="riddle" data-level="1">Level 1</button>
+                        <button class="level-button locked" data-game="riddle" data-level="2" disabled>🔒 Level 2</button>
+                        <button class="level-button locked" data-game="riddle" data-level="3" disabled>🔒 Level 3</button>
+                        <button class="level-button locked" data-game="riddle" data-level="4" disabled>🔒 Level 4</button>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="game-card">
+                <img src="images/hidden-object.jpg" alt="Hidden Object" class="game-image">
+                <div class="game-content">
+                    <h3>🔎 Hidden Object</h3>
+                    <p>Find the hidden object and complete the challenge.</p>
+
+                    <div class="levels">
+                        <button class="level-button" data-game="hiddenobject" data-level="1">Level 1</button>
+                        <button class="level-button locked" data-game="hiddenobject" data-level="2" disabled>🔒 Level 2</button>
+                        <button class="level-button locked" data-game="hiddenobject" data-level="3" disabled>🔒 Level 3</button>
+                        <button class="level-button locked" data-game="hiddenobject" data-level="4" disabled>🔒 Level 4</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="gameArea"></section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 MysteryBox | Interactive Mystery & Puzzle Game</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

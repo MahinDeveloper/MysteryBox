@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MysteryBox - Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.png" alt="MysteryBox Logo" class="site-logo">
+            <h1>MysteryBox</h1>
+        </div>
+        <p>Track your progress and achievements.</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="scoreboard.html">Scoreboard</a>
+            <a href="about.html">About</a>
+            <a href="#" id="logoutButton">🚪 Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="scoreboard">
+            <h2>⭐ Your Score</h2>
+
+            <div class="total-score">
+                <h3>Total Score: <span id="totalScore">0</span></h3>
+            </div>
+
+            <h2>📊 Game Scores</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Game</th>
+                        <th>Completed Levels</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>🕵️ Detective Mystery</td>
+                        <td id="detectiveLevels">0</td>
+                        <td id="detectiveScore">0</td>
+                    </tr>
+                    <tr>
+                        <td>🔐 Code Breaker</td>
+                        <td id="codebreakerLevels">0</td>
+                        <td id="codebreakerScore">0</td>
+                    </tr>
+                    <tr>
+                        <td>🧩 Riddle Challenge</td>
+                        <td id="riddleLevels">0</td>
+                        <td id="riddleScore">0</td>
+                    </tr>
+                    <tr>
+                        <td>🔎 Hidden Object</td>
+                        <td id="hiddenobjectLevels">0</td>
+                        <td id="hiddenobjectScore">0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <section id="achievements">
+                <h2>🏅 Achievements</h2>
+
+                <div class="achievement">
+                    <h3>🥇 First Mystery</h3>
+                    <p>Complete your first level.</p>
+                </div>
+
+                <div class="achievement">
+                    <h3>💡 No Hint Master</h3>
+                    <p>Complete all levels without using any hint.</p>
+                </div>
+
+                <div class="achievement">
+                    <h3>🔥 Mystery Hunter</h3>
+                    <p>Complete all four levels of a game.</p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 MysteryBox</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

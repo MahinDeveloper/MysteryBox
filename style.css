@@ -1,0 +1,586 @@
+/* 1. RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. BODY */
+body {
+    font-family: Arial;
+    background: #0b132b;
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. HEADER */
+header {
+    background: #111c3d;
+    text-align: center;
+    padding: 25px 15px;
+    border-bottom: 2px solid #f39c12;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #f39c12;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #d8dee9;
+    font-size: 16px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 5px;
+}
+
+.site-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* 4. NAV */
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    background: #1c2a52;
+    padding: 9px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #f39c12;
+    color: #111111;
+    transform: translateY(-2px);
+}
+
+/* 5. MAIN */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex: 1;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 6. SECTION */
+section {
+    background: #111c3d;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid #26365f;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+section h2 {
+    color: #f39c12;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+section p {
+    color: #d8dee9;
+    margin-bottom: 12px;
+}
+
+/* 7. HOME */
+#home {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+#home h2 { font-size: 32px; margin-bottom: 20px; }
+#home p { max-width: 750px; margin: 10px auto; font-size: 17px; }
+
+/* 8. FEATURES */
+#features ul {
+    list-style: none;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+#features li {
+    background: #1c2a52;
+    margin: 10px 0;
+    padding: 12px 18px;
+    border-radius: 7px;
+    border-left: 4px solid #f39c12;
+    transition: 0.3s;
+}
+
+#features li:hover {
+    transform: translateX(5px);
+    background: #243663;
+}
+
+/* 9. BUTTON */
+button {
+    background: #f39c12;
+    color: #111111;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background: #ffb52e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(243, 156, 18, 0.3);
+}
+
+button:disabled {
+    background: #4a5268;
+    color: #aeb5c5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* 10. PAGE TITLE */
+.page-title {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.page-title h2 { margin-bottom: 10px; }
+.page-title p { font-size: 17px; margin: 0; }
+
+/* 11. GAME CARD */
+.game-card {
+    background: #111c3d;
+    border: 1px solid #26365f;
+    border-left: 5px solid #f39c12;
+    border-radius: 12px;
+    padding: 0;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.game-card:hover {
+    transform: translateY(-4px);
+    border-left-color: #ffb52e;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+}
+
+.game-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover .game-image { transform: scale(1.05); }
+.game-content { padding: 20px; }
+.game-card h3 { color: #f39c12; font-size: 22px; margin-bottom: 8px; }
+.game-card p { color: #d8dee9; margin-bottom: 18px; }
+
+/* 12. LEVELS */
+.levels {
+    background: #0b132b;
+    padding: 18px;
+    border-radius: 8px;
+    border: 1px solid #26365f;
+}
+
+.level-button { min-width: 120px; }
+
+.level-button.locked {
+    background: #3c455d;
+    color: #aeb5c5;
+}
+
+.level-button.locked:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* 13. GAME AREA */
+#gameArea {
+    background: #111c3d;
+    border: 2px solid #f39c12;
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 25px;
+}
+
+#gameArea h2 { color: #f39c12; text-align: center; margin-bottom: 15px; }
+#gameArea h3 { color: #ffffff; margin: 20px 0; font-size: 18px; }
+
+#gameTimer {
+    text-align: center;
+    font-size: 18px;
+    color: #f39c12;
+    margin-bottom: 15px;
+}
+
+.answer-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.answer-options label {
+    background: #1c2a52;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.answer-options label:hover { background: #243663; }
+
+.answer-options input[type="radio"] {
+    width: auto;
+    margin: 0;
+    accent-color: #f39c12;
+}
+
+/* 14. SCOREBOARD */
+#scoreboard { overflow-x: auto; }
+
+.total-score {
+    text-align: center;
+    background: #0b132b;
+    border: 2px solid #f39c12;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.total-score h3 { color: #ffffff; font-size: 25px; }
+#totalScore { color: #f39c12; font-size: 30px; }
+
+/* 15. TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+th {
+    background: #f39c12;
+    color: #111111;
+    padding: 13px;
+    text-align: center;
+}
+
+td {
+    background: #1c2a52;
+    color: #ffffff;
+    padding: 13px;
+    text-align: center;
+    border-bottom: 1px solid #35466f;
+}
+
+tr:hover td { background: #243663; }
+
+/* 16. ACHIEVEMENTS */
+#achievements {
+    margin-top: 30px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.achievement {
+    background: #1c2a52;
+    border: 1px solid #26365f;
+    border-radius: 9px;
+    padding: 18px;
+    margin-bottom: 12px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.achievement h3 { color: #f39c12; margin-bottom: 5px; }
+.achievement p { margin-bottom: 0; }
+
+/* 17. RESULT */
+#result {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#resultTitle { font-size: 30px; }
+
+.result-box {
+    background: #0b132b;
+    border: 2px solid #f39c12;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+}
+
+.result-box h3 { color: #f39c12; font-size: 23px; margin-bottom: 15px; }
+
+.result-box p {
+    background: #1c2a52;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+}
+
+.result-box strong { color: #f39c12; }
+
+#unlockMessage {
+    background: #163d2b;
+    border: 1px solid #2ecc71;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#unlockMessage h3 { color: #2ecc71; margin-bottom: 8px; }
+#unlockMessage p { margin-bottom: 0; }
+
+.result-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.result-buttons a { text-decoration: none; }
+
+/* 18. ABOUT */
+#about h2 { margin-top: 15px; }
+#about h2:first-child { margin-top: 0; }
+
+#about p {
+    text-align: center;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+#about ul {
+    max-width: 700px;
+    margin: 10px auto 25px;
+    list-style: none;
+}
+
+#about li {
+    background: #1c2a52;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border-left: 4px solid #f39c12;
+}
+
+/* 19. AUTH */
+#auth {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.auth-box {
+    background: #111c3d;
+    border: 1px solid #26365f;
+    border-top: 4px solid #f39c12;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 500px;
+}
+
+.auth-box h2 {
+    color: #f39c12;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Notun — Auth Subtitle + Note */
+.auth-subtitle {
+    text-align: center;
+    color: #d8dee9;
+    margin-bottom: 20px;
+}
+
+.auth-note {
+    text-align: center;
+    color: #8993a8;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* 20. FORM */
+form { width: 100%; }
+
+label {
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 12px 0 6px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #3a4a70;
+    border-radius: 6px;
+    background: #0b132b;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+}
+
+input::placeholder { color: #8993a8; }
+
+input:focus {
+    border-color: #f39c12;
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.3);
+}
+
+.auth-box form button {
+    width: 100%;
+    margin: 20px 0 0;
+}
+
+/* 21. PASSWORD BOX */
+.password-box {
+    position: relative;
+    width: 100%;
+}
+
+.password-box input { padding-right: 50px; }
+
+.password-box .show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    margin: 0;
+    padding: 5px 8px;
+    background: transparent;
+    color: #333333;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.password-box .show-password:hover {
+    background: transparent;
+    color: #f39c12;
+    transform: translateY(-50%);
+    box-shadow: none;
+}
+
+/* 22. FOOTER */
+footer {
+    background: #111c3d;
+    border-top: 2px solid #f39c12;
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: auto;
+}
+
+footer p {
+    color: #aeb5c5;
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+/* 23. LOGOUT */
+#logoutButton { background: #8e2f2f; }
+#logoutButton:hover { background: #c0392b; color: #ffffff; }
+
+/* 24. LINKS */
+a { color: #f39c12; }
+a:hover { color: #ffb52e; }
+
+/* 25. MESSAGE BOX */
+.message-box {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 9999;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    animation: slideDown 0.3s ease;
+    max-width: 90%;
+    text-align: center;
+}
+
+.message-box.success {
+    background: #163d2b;
+    color: #2ecc71;
+    border: 2px solid #2ecc71;
+}
+
+.message-box.error {
+    background: #3d1616;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+}
+
+.message-box.info {
+    background: #1c2a52;
+    color: #f39c12;
+    border: 2px solid #f39c12;
+}
+
+@keyframes slideDown {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: 30px;
+        opacity: 1;
+    }
+}
